@@ -73,7 +73,7 @@ if uploaded_acc_iTUG is not None:
         norm_waveform = np.sqrt(x**2+y**2+z**2)
 
         # Filtering acceleration data norm
-        f1 = 0.5
+        f1 = 2
         f2 = 100
         x_2 = butterworth_filter(
             x, f1, f2, order=2, btype='low')
@@ -201,5 +201,6 @@ if uploaded_acc_iTUG is not None:
 
         st.text("Velocidade média de caminhada (m/s) = " +
                 str(round(4/(x_data[t2_10]-x_data2[t1_10]), 2)))
+
 
 
