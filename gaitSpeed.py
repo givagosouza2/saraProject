@@ -155,14 +155,14 @@ if uploaded_acc_iTUG is not None:
                 break
 
         plt.figure(figsize=(5, 3))
-        plt.plot(t, norm_waveform, 'y')
+        #plt.plot(t, norm_waveform, 'y')
         plt.plot(t, norm_waveform_2, 'k')
         plt.plot(x_data, y_fit, 'b')
-        plt.plot(x_data2, y_fit2, 'r')
-        plt.plot([x_data[t2_10], x_data[t2_10]], [0, 0.5], '--k')
-        plt.plot([x_data[t2_90], x_data[t2_90]], [0, 0.5], '--k')
-        plt.plot([x_data2[t1_10], x_data2[t1_10]], [0, 0.5], '--k')
-        plt.plot([x_data2[t1_90], x_data2[t1_90]], [0, 0.5], '--k')
+        #plt.plot(x_data2, y_fit2, 'r')
+        #plt.plot([x_data[t2_10], x_data[t2_10]], [0, 0.5], '--k')
+        #plt.plot([x_data[t2_90], x_data[t2_90]], [0, 0.5], '--k')
+        #plt.plot([x_data2[t1_10], x_data2[t1_10]], [0, 0.5], '--k')
+        #plt.plot([x_data2[t1_90], x_data2[t1_90]], [0, 0.5], '--k')
         st.pyplot(plt)
 
         amplitude_maxima_de_aceleracao = Vmax_fit2
@@ -201,3 +201,4 @@ if uploaded_acc_iTUG is not None:
 
         st.text("Velocidade média de caminhada (m/s) = " +
                 str(round(4/(x_data[t2_10]-x_data2[t1_10]), 2)))
+
